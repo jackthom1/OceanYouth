@@ -1,0 +1,32 @@
+.about {
+  &__hero {
+    width: 100%;
+    height: 30vh;
+  }
+  &__content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+  }
+  &__text {
+    font-family: var(--font-family-primary);
+    line-height: 1.2rem;
+    & + * {
+      margin-top: 1rem;
+    }
+  }
+  &__list {
+    padding-left: 1rem;
+    li {
+      margin-top: 0.5rem;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    & + * {
+      margin-top: 2rem;
+    }
+  }
+}

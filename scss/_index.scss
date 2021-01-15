@@ -1,0 +1,78 @@
+.hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../attributes/images/mobileHero.png") no-repeat;
+  background-size: cover;
+
+  &__title {
+    font-size: 3rem;
+    color: var(--clr-primary-300);
+    text-shadow: 1px 1px 2px var(--clr-primary-800);
+  }
+  &__btn {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+.shows {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 2rem 1rem;
+  &__header {
+    font-size: 2rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+.show {
+  &__container {
+    width: auto;
+    height: auto;
+    padding: 1.5rem 0;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 5px var(--clr-primary-800);
+    transition: box-shadow 0.2s ease-out;
+    background: var(--clr-primary-200);
+    &:hover {
+      box-shadow: -1px -1px 5px var(--clr-primary-800);
+    }
+    &:hover > .show__link::after {
+      width: 4.8rem;
+    }
+  }
+  &__image {
+    width: 90%;
+  }
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--clr-primary-600);
+    font-family: var(--font-family-second);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0.2rem;
+      width: 0.5rem;
+      background: var(--clr-primary-800);
+      bottom: 0;
+      left: 0;
+      transition: width 0.2s ease-out;
+    }
+  }
+}

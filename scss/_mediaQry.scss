@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  .nav {
+    &__image {
+      width: 8%;
+    }
+  }
+  .shows {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    &__image {
+      width: 5%;
+    }
+    &__itemContainer {
+      height: 20rem;
+    }
+  }
+  .hero {
+    background: url(../attributes/images/desktopHero.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  .shows {
+    &__grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .about {
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 25px;
+  }
+  .nav {
+    &__image {
+      width: 4%;
+    }
+  }
+}
